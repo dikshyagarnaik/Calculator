@@ -1,0 +1,42 @@
+
+.container{
+    width: 100%;
+    margin: auto;
+    box-shadow: 15px 10px 20px 10px grey ;
+}
+#display{
+    height: 100px;
+    font-size: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+.inner-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    margin:auto;
+}
+.inner-container>div{
+    background-color: black;
+    color: purple;
+    padding: 10%;
+    font-size:30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-container .num{
+    color: white;
+}
+.inner-container>div:hover{
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+}
+@media screen and (min-width:224px){
+    .inner-container{
+        min-height: 75vh;
+    }
+}
